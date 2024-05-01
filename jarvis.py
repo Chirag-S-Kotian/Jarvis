@@ -20,7 +20,7 @@ def wishMe():
         speak("Good Afternoon!")
     else:
         speak("Good Evening!")
-    speak("I am Jarvis Sir. Please tell me How may I help you")
+    speak("I am Jarvis Sir.tell your command")
     
 def takeCommand():
     r = sr.Recognizer()
@@ -33,8 +33,8 @@ def takeCommand():
         query = r.recognize_google(audio, language='en-in')
         print(f"User said: {query}\n")
     except Exception as e:
-        print(e)
-        print("Say that again please...")
+        # print(e)
+        speak("Say that again please...")
         return "None"
     return query
 
