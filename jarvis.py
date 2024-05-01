@@ -20,7 +20,7 @@ def wishMe():
         speak("Good Afternoon!")
     else:
         speak("Good Evening!")
-    speak("I am Jarvis Sir.tell your command")
+    speak("I am Jarvis Sir. tell me your command ")
     
 def takeCommand():
     r = sr.Recognizer()
@@ -34,7 +34,7 @@ def takeCommand():
         print(f"User said: {query}\n")
     except Exception as e:
         # print(e)
-        speak("Say that again please...")
+        print("Say that again please...")
         return "None"
     return query
 
